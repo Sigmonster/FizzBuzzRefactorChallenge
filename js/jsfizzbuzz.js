@@ -8,11 +8,16 @@ document.write(mytest);
 var numbers = [];
 var numfactor=.5;
 
-do{
-numfactor = prompt("Please enter a number, no decimals please.");
+function getIntegerPromptNumber(){
+	do{
+	numfactor = prompt("Please enter a number, no decimals please.");
+	console.log(numfactor)
+	}
+	while (numfactor % 1 != 0);
+
+	return numfactor = 0+parseInt(numfactor);
 }
-while (numfactor % 1 != 0);
-numfactor = 0+parseInt(numfactor);
+getIntegerPromptNumber();
 
 for (var i =0; i<100; i++){
 	numbers[i] = i + 1;
