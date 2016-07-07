@@ -30,7 +30,7 @@ for (var i =0; i<100; i++){
 		}
 	}
 	else if (0==numbers[i]%5) {
-		numbers[i]="Buzz";
+		numbers[i]="Buzz";s
 	}
 }
 //displays array data in quick & dirty horizontal list
